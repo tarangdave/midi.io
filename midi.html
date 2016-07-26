@@ -10,17 +10,44 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
         <script>
-            function ale(){
-                alert("you pressed one button");
-            }
-        </script>
+		$(document).keypress(function(e){
+			if(e.which == 55){
+				console.log("pressed 7 button");
+			}
+			if(e.which == 56){
+				console.log("pressed 8 button");
+			}
+			if(e.which == 57){
+				console.log("pressed 9 button");
+			}
+			if(e.which == 52){
+				console.log("pressed 4 button");
+			}
+			if(e.which == 53){
+				console.log("pressed 5 button");
+			}
+			if(e.which == 54){
+				console.log("pressed 6 button");
+			}
+			if(e.which == 49){
+				console.log("pressed 1 button");
+			}
+			if(e.which == 50){
+				console.log("pressed 2 button");
+			}
+			if(e.which == 51){
+				console.log("pressed 3 button");
+			}
+			
+		});
+	</script>
 		
 		<style>
 			.main_block{
     
 				background-color: grey;
-				width: 410px;
-				height: 410px;
+				width: 310px;
+				height: 310px;
 				margin: auto;
 				margin-top: 10%;
 			}
@@ -49,65 +76,51 @@
             <div class="navbar-header">
               <a class="navbar-brand" href="#">WebSiteName</a>
             </div>
-            <ul class="nav navbar-nav">
-              
-            </ul>
+			  
+            
           </div>
         </nav>
 
          
-        
+        <div class="row">
+			<ul class="nav navbar-nav">
+              <li><button class="btn btn-danger"><span class="glyphicon glyphicon-record"></span></button>&nbsp;&nbsp;</li>
+				<li><button class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>&nbsp;&nbsp;</li>
+				<li><button class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>&nbsp;&nbsp;</li>
+				<li><button class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button></li>
+            </ul>
+		</div>
         
         
         <div class="main_block">
             <button class="inner_block">
-                
-            </button>
-            <button class="inner_block" onclick="ale()">
-                
+                7
             </button>
             <button class="inner_block">
-                
+                8
             </button>
             <button class="inner_block">
-                
+                9
             </button>
             <button class="inner_block">
-                
+                4
             </button>
             <button class="inner_block">
-                
+                5
             </button>
             <button class="inner_block">
-                
+                6
             </button>
             <button class="inner_block">
-                
+                1
             </button>
             <button class="inner_block">
-                
+                2
             </button>
             <button class="inner_block">
-                
+                3
             </button>
-            <button class="inner_block">
-                
-            </button>
-            <button class="inner_block">
-                
-            </button>
-            <button class="inner_block">
-                
-            </button>
-            <button class="inner_block">
-                
-            </button>
-            <button class="inner_block">
-                
-            </button>
-            <button class="inner_block">
-                
-            </button>
+          
             
         </div>
     </body>

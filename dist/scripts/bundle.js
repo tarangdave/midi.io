@@ -20453,70 +20453,66 @@ var Plate = React.createClass({displayName: "Plate",
 			if(e.which == 51 || e.which == 110){
 				console.log("pressed 3 button");
 			}
-			
+
 		});
     },
 
     render: function(){
         return (
         React.createElement("div", null, 
-        React.createElement("nav", {className: "navbar navbar-inverse"}, 
-          React.createElement("div", {className: "container-fluid"}, 
-            React.createElement("div", {className: "navbar-header"}, 
-              React.createElement("a", {className: "navbar-brand", href: "#"}, "Midi IO")
-            )
-			  
+            React.createElement("nav", {className: "navbar navbar-inverse"}, 
+                React.createElement("div", {className: "container-fluid"}, 
+                    React.createElement("div", {className: "navbar-header"}, 
+                        React.createElement("a", {className: "navbar-brand", href: "#"}, "Midi IO")
+                    )
+                )
+            ), 
+            React.createElement("div", {className: "container"}, 
             
-          )
-        ), 
+			         React.createElement("ul", {className: "nav navbar-nav"}, 
+                    React.createElement("li", null, React.createElement("button", {className: "btn btn-danger"}, React.createElement("span", {className: "glyphicon glyphicon-record"})), "  "), 
+				            React.createElement("li", null, React.createElement("button", {className: "btn btn-success"}, React.createElement("span", {className: "glyphicon glyphicon-play"})), "  "), 
+				            React.createElement("li", null, React.createElement("button", {className: "btn btn-primary"}, React.createElement("span", {className: "glyphicon glyphicon-pause"})), "  "), 
+				            React.createElement("li", null, React.createElement("button", {className: "btn btn-default"}, React.createElement("span", {className: "glyphicon glyphicon-stop"})))
+               )
 
-         
-        React.createElement("div", {className: "row"}, 
-			React.createElement("ul", {className: "nav navbar-nav"}, 
-              React.createElement("li", null, React.createElement("button", {className: "btn btn-danger"}, React.createElement("span", {className: "glyphicon glyphicon-record"})), "  "), 
-				React.createElement("li", null, React.createElement("button", {className: "btn btn-success"}, React.createElement("span", {className: "glyphicon glyphicon-play"})), "  "), 
-				React.createElement("li", null, React.createElement("button", {className: "btn btn-primary"}, React.createElement("span", {className: "glyphicon glyphicon-pause"})), "  "), 
-				React.createElement("li", null, React.createElement("button", {className: "btn btn-default"}, React.createElement("span", {className: "glyphicon glyphicon-stop"})))
+		        ), 
+
+            React.createElement("div", {className: "main_block"}, 
+                React.createElement("button", {className: "inner_block"}, 
+                    "7"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "8"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "9"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "4"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "5"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "6"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "1"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "2"
+                ), 
+                React.createElement("button", {className: "inner_block"}, 
+                    "3"
+                )
             )
-		), 
-        
-        
-        React.createElement("div", {className: "main_block"}, 
-            React.createElement("button", {className: "inner_block"}, 
-                "7"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "8"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "9"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "4"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "5"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "6"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "1"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "2"
-            ), 
-            React.createElement("button", {className: "inner_block"}, 
-                "3"
-            )
-          )
-        )    
+        )
         )
     }
-}); 
+});
 
 module.exports = Plate;
-
 },{"react":171}],173:[function(require,module,exports){
 var React = require('react');
 var ReactDOM = require('react-dom');

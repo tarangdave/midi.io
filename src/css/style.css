@@ -1,5 +1,5 @@
 .main_block{
-    
+
 				background-color: grey;
 				width: 310px;
 				height: 310px;
@@ -13,13 +13,14 @@
 				height: 100px;
 				margin-left: 2px;
 				position: relative;
-				margin-top: 2px;
+				margin-top: 2.5px;
 				float: left;
 			}
 
 			.body{
 				background-color: black;
 			}
-			.row{
-				padding-left: 45%;
-			}
+      .nav{ 
+        width: 58%;
+        float: right;
+      }

@@ -20,14 +20,14 @@
 			var but_8y = document.getElementById('but_8');
 			var but_9u = document.getElementById('but_9');
 			
-			audio1.src = "sounds/aud_1_kick1.wav";	
-			audio2.src = "sounds/aud_2_kick2.wav";
-			audio3.src = "sounds/aud_3_kick3.wav";
-			audio4.src = "sounds/aud_4_snare1.wav";
-			audio5.src = "sounds/aud_6_snare2.wav";
-			audio6.src = "sounds/aud_5_shaker2.wav";
-			audio8.src = "sounds/aud_3_ride2.wav";
-			audio9.src = "sounds/aud_4_ride3.wav";
+			audio1.src = "aud_1_kick1.wav";	
+			audio2.src = "aud_2_kick2.wav";
+			audio3.src = "aud_3_kick3.wav";
+			audio4.src = "aud_4_snare1.wav";
+			audio5.src = "aud_6_snare2.wav";
+			audio6.src = "aud_5_shaker2.wav";
+			audio8.src = "aud_3_ride2.wav";
+			audio9.src = "aud_4_ride3.wav";
 			
 			
 			

@@ -1,9 +1,17 @@
 var React = require('react');
-
+var RecordRTC = require('recordrtc');
+var Whammy = RecordRTC.Whammy;
+var WhammyRecorder = RecordRTC.WhammyRecorder;
+var StereoAudioRecorder = RecordRTC.StereoAudioRecorder;
+var recorder = RecordRTC({}, {
+    type: 'audio',
+    recorderType: RecordRTC.WhammyRecorder
+});
 var Plate = React.createClass({
     componentDidMount: function() {
         $(document).keypress(function(e){
 			if(e.which == 55 || e.which == 116){
+                recorder.startRecording();
 				console.log("pressed 7 button");
 			}
 			if(e.which == 56 || e.which == 121){
@@ -57,7 +65,8 @@ var Plate = React.createClass({
 
             <div className="main_block">
                 <button className="inner_block">
-                    7
+                    <span className="glyphicon glyphicon-record"></span><br/>
+                     7 / T
                 </button>
                 <button className="inner_block">
                     8

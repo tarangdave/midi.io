@@ -8,40 +8,8 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        
-        <script>
-		$(document).keypress(function(e){
-			if(e.which == 55){
-				console.log("pressed 7 button");
-			}
-			if(e.which == 56){
-				console.log("pressed 8 button");
-			}
-			if(e.which == 57){
-				console.log("pressed 9 button");
-			}
-			if(e.which == 52){
-				console.log("pressed 4 button");
-			}
-			if(e.which == 53){
-				console.log("pressed 5 button");
-			}
-			if(e.which == 54){
-				console.log("pressed 6 button");
-			}
-			if(e.which == 49){
-				console.log("pressed 1 button");
-			}
-			if(e.which == 50){
-				console.log("pressed 2 button");
-			}
-			if(e.which == 51){
-				console.log("pressed 3 button");
-			}
-			
-		});
-	</script>
-		
+        <script src="new_added.js"></script>
+		<script src="../RecordRTC/RecordRTC.js"></script>
 		<style>
 			.main_block{
     
@@ -51,7 +19,6 @@
 				margin: auto;
 				margin-top: 10%;
 			}
-
 			.inner_block{
 				background-color: aquamarine;
 				width: 100px;
@@ -61,7 +28,6 @@
 				margin-top: 2px;
 				float: left;
 			}
-
 			.body{
 				background-color: black;
 			}
@@ -96,35 +62,43 @@
         
         
         <div class="main_block">
-            <button class="inner_block">
-                7
+            <button class="inner_block" id="but_7">
+                t
             </button>
-            <button class="inner_block">
-                8
+            <button class="inner_block" id="but_8">
+                y
             </button>
-            <button class="inner_block">
-                9
+            <button class="inner_block" id="but_9">
+                u
             </button>
-            <button class="inner_block">
-                4
+            <button class="inner_block" id="but_4">
+                g
             </button>
-            <button class="inner_block">
-                5
+            <button class="inner_block" id="but_5">
+                h
             </button>
-            <button class="inner_block">
-                6
+            <button class="inner_block" id="but_6">
+                j
             </button>
-            <button class="inner_block">
-                1
+            <button class="inner_block" id="but_1">
+                v
             </button>
-            <button class="inner_block">
-                2
+            <button class="inner_block" id="but_2">
+                b
             </button>
-            <button class="inner_block">
-                3
+            <button class="inner_block" id="but_3">
+                n
             </button>
           
-            
+            <audio id="aud_1" style = "display:none" controls></audio>
+			<audio id="aud_2" style = "display:none" controls></audio>
+			<audio id="aud_3" style = "display:none" controls></audio>
+			<audio id="aud_4" style = "display:none" controls></audio>
+			<audio id="aud_5" style = "display:none" controls></audio>
+			<audio id="aud_6" style = "display:none" controls></audio>
+			<audio id="aud_7" style = "display:none" controls></audio>
+			<audio id="aud_8" style = "display:none" controls></audio>
+			<audio id="aud_9" style = "display:none" controls></audio>
         </div>
     </body>
 </html>

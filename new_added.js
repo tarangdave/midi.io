@@ -1,6 +1,6 @@
 
 		window.onload = function(){
-			var audio1 = document.getElementById('aud_1');
+			/*var audio1 = document.getElementById('aud_1');
 			var audio2 = document.getElementById('aud_2');
 			var audio3 = document.getElementById('aud_3');
 			var audio4 = document.getElementById('aud_4');
@@ -9,6 +9,45 @@
 			var audio7 = document.getElementById('aud_7');
 			var audio8 = document.getElementById('aud_8');
 			var audio9 = document.getElementById('aud_9');
+			*/
+			
+			/*var audio1 = new Audio("aud_1_kick1.wav");
+			var audio2 = new Audio("aud_2_kick2.wav");
+			var audio3 = new Audio("aud_3_kick3.wav");
+			var audio4 = new Audio("aud_4_snare1.wav");
+			var audio5 = new Audio("aud_6_snare2.wav");
+			var audio6 = new Audio("aud_5_shaker2.wav");
+			var audio7 = new Audio();
+			var audio8 = new Audio("aud_3_ride2.wav");
+			var audio9 = new Audio("aud_4_ride3.wav");
+			*/
+			
+			var audio1 = new Howl({
+				src: ['aud_1_kick1.wav']
+			});
+			var audio2 = new Howl({
+				src: ['aud_2_kick2.wav']
+			});
+			var audio3 = new Howl({
+				src: ['aud_3_kick3.wav']
+			});
+			var audio4 = new Howl({
+				src: ['aud_4_snare1.wav']
+			});
+			var audio5 = new Howl({
+				src: ['aud_6_snare2.wav']
+			});
+			var audio6 = new Howl({
+				src: ['aud_5_shaker2.wav']
+			});
+			var audio7;
+			
+			var audio8 = new Howl({
+				src: ['aud_3_ride2.wav']
+			});
+			var audio9 = new Howl({
+				src: ['aud_4_ride3.wav']
+			});
 			
 			var but_1v = document.getElementById('but_1');
 			var but_2b = document.getElementById('but_2');
@@ -20,6 +59,8 @@
 			var but_8y = document.getElementById('but_8');
 			var but_9u = document.getElementById('but_9');
 			
+			
+			/*
 			audio1.src = "aud_1_kick1.wav";	
 			audio2.src = "aud_2_kick2.wav";
 			audio3.src = "aud_3_kick3.wav";
@@ -28,7 +69,7 @@
 			audio6.src = "aud_5_shaker2.wav";
 			audio8.src = "aud_3_ride2.wav";
 			audio9.src = "aud_4_ride3.wav";
-			
+			*/
 			
 			
 			//var button = document.getElementByID("inner_block");
@@ -57,6 +98,7 @@
 			}
 			if(e.which == 89 || e.which == 121){
 				audio8.play();
+				
 				console.log("pressed 8 button");
 			}
 			if(e.which == 85 || e.which == 117){
@@ -163,8 +205,8 @@
 			var blob;
 			var url;
 				if(successCallback){
-					audio7.src = URL.createObjectURL(Uni_stream);
-					audio7.muted = true;
+					//audio7.src = URL.createObjectURL(Uni_stream);
+					//audio7.muted = true;
 					var recordRTC = RecordRTC(Uni_stream,{
 						type:'audio'
 					});
@@ -180,8 +222,13 @@
 							console.log(blob);
 							url = URL.createObjectURL(blob);
 							console.log(url);
-							audio7.src = url;
-							audio7.muted = false;
+							recordRTC.getDataURL(function(dataURL) { 
+								audio7 = new Howl({
+								src: [dataURL]
+							});
+							});
+							
+							//audio7.muted = false;
 							but_7t.disabled = false;
 						});
 					},2 * 1000);

@@ -19,12 +19,13 @@
     "gulp-eslint": "^0.15.0",
     "gulp-open": "^0.3.2",
     "jquery": "^2.1.4",
+    "mongodb": "^2.2.9",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^0.13.3",
     "reactify": "^1.1.1",
-    "vinyl-source-stream": "^1.1.0",
-    "recordrtc": "*"
+    "recordrtc": "*",
+    "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
     "babelify": "^7.2.0",

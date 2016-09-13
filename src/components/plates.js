@@ -1,3 +1,6 @@
+var appbaseRef = require("./appbase").appbaseRef;
+var config = require("./appbase").config;
+
 var React = require('react');
 var RecordRTC = require('recordrtc');
 var Whammy = RecordRTC.Whammy;
@@ -9,6 +12,19 @@ var recorder = RecordRTC({}, {
 });
 var Plate = React.createClass({
     componentDidMount: function() {
+        appbaseRef.index({
+  type: "midi",
+  body: {
+    "msg": "writing my first tweet!",
+    "by": "jack",
+    "using": ["appbase.io", "javascript", "streams"],
+    "test": true
+  }
+}).on('data', function(res) {
+  console.log("successfully indexed: ", res);
+}).on('error', function(err) {
+  console.log("indexing error: ", err);
+});
         $(document).keypress(function(e){
 			if(e.which == 55 || e.which == 116){
                 recorder.startRecording();

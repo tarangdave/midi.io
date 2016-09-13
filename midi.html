@@ -10,13 +10,14 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="new_added.js"></script>
 		<script src="./node_modules/recordrtc/RecordRTC.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0/howler.min.js"></script>
 		<style>
 			.main_block{
     
 				background-color: grey;
 				width: 310px;
 				height: 310px;
-				margin: auto;
+				//margin: auto;
 				margin-top: 10%;
 			}
 			.inner_block{
@@ -32,7 +33,7 @@
 				background-color: black;
 			}
 			.row{
-				padding-left: 45%;
+				//padding-left: 45%;
 			}
 		</style>
         
@@ -52,53 +53,75 @@
 
          
         <div class="row">
-			<ul class="nav navbar-nav">
-              <li><button class="btn btn-danger"><span class="glyphicon glyphicon-record"></span></button>&nbsp;&nbsp;</li>
-				<li><button class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>&nbsp;&nbsp;</li>
-				<li><button class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>&nbsp;&nbsp;</li>
-				<li><button class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button></li>
-            </ul>
+			
+				<div class="col-sm-5">
+				</div>
+				<div class="col-sm-4">
+					<ul class="nav navbar-nav">
+					  	<li><button class="btn btn-danger"><span class="glyphicon glyphicon-record"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+				</div>
+			
+			
 		</div>
         
+        <div class="row">
+			
+				<div class="col-sm-1">
+				</div>
+				<div class="col-md-2 col-sm-2" style="margin-top:4%;">
+					<button class="inner_block">
+					</button>
+					<button class="inner_block">
+					</button>
+					<button class="inner_block">
+					</button>
+					
+				</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="main_block">
+					<button class="inner_block" id="but_7">
+						t
+					</button>
+					<button class="inner_block" id="but_8">
+						y
+					</button>
+					<button class="inner_block" id="but_9">
+						u
+					</button>
+					<button class="inner_block" id="but_4">
+						g
+					</button>
+					<button class="inner_block" id="but_5">
+						h
+					</button>
+					<button class="inner_block" id="but_6">
+						j
+					</button>
+					<button class="inner_block" id="but_1">
+						v
+					</button>
+					<button class="inner_block" id="but_2">
+						b
+					</button>
+					<button class="inner_block" id="but_3">
+						n
+					</button>
+				  
+					
+				</div>		
+			</div>
+			<div class="col-md-3 col-sm-3">
+				
+			</div>
+			
+			
+		</div>
         
-        <div class="main_block">
-            <button class="inner_block" id="but_7">
-                t
-            </button>
-            <button class="inner_block" id="but_8">
-                y
-            </button>
-            <button class="inner_block" id="but_9">
-                u
-            </button>
-            <button class="inner_block" id="but_4">
-                g
-            </button>
-            <button class="inner_block" id="but_5">
-                h
-            </button>
-            <button class="inner_block" id="but_6">
-                j
-            </button>
-            <button class="inner_block" id="but_1">
-                v
-            </button>
-            <button class="inner_block" id="but_2">
-                b
-            </button>
-            <button class="inner_block" id="but_3">
-                n
-            </button>
-          
-            <audio id="aud_1"  controls></audio>
-			<audio id="aud_2" style = "display:none" controls></audio>
-			<audio id="aud_3" style = "display:none" controls></audio>
-			<audio id="aud_4" style = "display:none" controls></audio>
-			<audio id="aud_5" style = "display:none" controls></audio>
-			<audio id="aud_6" style = "display:none" controls></audio>
-			<audio id="aud_7" style = "display:none" controls></audio>
-			<audio id="aud_8" style = "display:none" controls></audio>
-			<audio id="aud_9" style = "display:none" controls></audio>
-        </div>
     </body>
 </html>

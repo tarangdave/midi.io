@@ -1,6 +1,6 @@
 
 		window.onload = function(){
-			/*
+			
 			var audio1 = document.getElementById('aud_1');
 			var audio2 = document.getElementById('aud_2');
 			var audio3 = document.getElementById('aud_3');
@@ -10,9 +10,9 @@
 			var audio7 = document.getElementById('aud_7');
 			var audio8 = document.getElementById('aud_8');
 			var audio9 = document.getElementById('aud_9');
-			*/
 			
-			var audio1;
+			
+			/*var audio1;
 			var audio2;
 			var audio3;
 			var audio4;
@@ -20,7 +20,7 @@
 			var audio6;
 			var audio7;
 			var audio8;
-			var audio9;
+			var audio9;*/
 			
 			var but_1v = document.getElementById('but_1');
 			var but_2b = document.getElementById('but_2');

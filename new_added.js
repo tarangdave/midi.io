@@ -49,6 +49,37 @@
 				src: ['aud_4_ride3.wav']
 			});
 			
+			$("#drum_sample").click(function(){
+				console.log("hmm clicked")
+				var audio1 = new Howl({
+					src: ['snare_1.wav']
+				});
+				var audio2 = new Howl({
+					src: ['snare_2.wav']
+				});
+				var audio3 = new Howl({
+					src: ['snare_3.wav']
+				});
+				var audio4 = new Howl({
+					src: ['snare_4.wav']
+				});
+				var audio5 = new Howl({
+					src: ['snare_5.wav']
+				});
+				var audio6 = new Howl({
+					src: ['snare_6.wav']
+				});
+				var audio7 = new Howl({
+					src: ['snare_7.wav']
+				});
+				var audio8 = new Howl({
+					src: ['snare_8.wav']
+				});
+				var audio9 = new Howl({
+					src: ['snare_9.wav']
+				});
+			});
+			
 			var but_1v = document.getElementById('but_1');
 			var but_2b = document.getElementById('but_2');
 			var but_3n = document.getElementById('but_3');

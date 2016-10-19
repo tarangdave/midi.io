@@ -37632,8 +37632,7 @@ function successCallback(stream){
                            
                             url = URL.createObjectURL(blob);
                             var meta = url;
-                            var data={ name:'',url:''};
-                            data.name='img';
+                            var data={ url:''};
                             data.url=meta;
 
                             console.log(data);
@@ -37692,6 +37691,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_8y",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio8 = new Howl({
@@ -37728,6 +37748,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_9u",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio9 = new Howl({
@@ -37764,6 +37805,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_4g",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio4 = new Howl({
@@ -37800,6 +37862,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_5h",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio5 = new Howl({
@@ -37836,6 +37919,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_6j",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio6 = new Howl({
@@ -37872,6 +37976,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_1v",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio1 = new Howl({
@@ -37907,6 +38032,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_2b",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio2 = new Howl({
@@ -37942,6 +38088,27 @@ function successCallback(stream){
                             //console.log(typeof(blob));
                             console.log(blob);
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ url:''};
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_3n",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio7 = new Howl({

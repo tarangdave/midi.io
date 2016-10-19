@@ -37605,71 +37605,368 @@ function successCallback(stream){
             var mediaConstraints = {audio: true};
             
             navigator.mediaDevices.getUserMedia(mediaConstraints).then(successCallback).catch(errorCallback);
-            
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_7t"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_8y"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_9u"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_4g"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_5h"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_6j"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_1v"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_2b"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_3n"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              appbaseRef.delete({
+                                  type: "midi",
+                                  id: res.hits.hits[0]._id
+                                }).on('data', function(res) {
+                                  console.log("successfully deleted: ", res);
+                                }).on('error', function(err) {
+                                  console.log("deletion error: ", err);
+                                })
+                            });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_7t",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_8y",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_9u",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_4g",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_5h",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_6j",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_1v",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_2b",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_3n",
+                                    "myBlob": null
+                                }
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
             function recording7(){
-            var blob;
-            var url;
+                var blob;
+                var url;
+                
                 if(successCallback){
-                    //audio7.src = URL.createObjectURL(Uni_stream);
-                    //audio7.muted = true;
-                    var recordRTC = RecordRTC(Uni_stream,{
-                        type:'audio'
-                    });
-                    
-                    recordRTC.startRecording();
-                    //console.log("recording");
-                    but_7t.innerHTML = "Recording";
-                    setTimeout(function(){
-                        recordRTC.stopRecording(function(){
-                            but_7t.innerHTML = "play";
-                            blob = recordRTC.blob;
-                            //console.log(typeof(blob));
-                            console.log(blob);
-                            /*var reader = new FileReader();
-                            reader.readAsDataURL(blob);
-                            var file = document.querySelector('#files > input[type="file"]').files[0];*/
-                           // var meta = blob['Blob'];
-                           
-                            url = URL.createObjectURL(blob);
-                            var meta = url;
-                            var data={ url:''};
-                            data.url=meta;
+                        //audio7.src = URL.createObjectURL(Uni_stream);
+                        //audio7.muted = true;
+                        var recordRTC = RecordRTC(Uni_stream,{
+                            type:'audio'
+                        });
+                        
+                        recordRTC.startRecording();
+                        //console.log("recording");
+                        but_7t.innerHTML = "Recording";
+                        setTimeout(function(){
+                            recordRTC.stopRecording(function(){
+                                but_7t.innerHTML = "play";
+                                blob = recordRTC.blob;
+                                //console.log(typeof(blob));
+                                console.log(blob);
+                                /*var reader = new FileReader();
+                                reader.readAsDataURL(blob);
+                                var file = document.querySelector('#files > input[type="file"]').files[0];*/
+                               // var meta = blob['Blob'];
+                               
+                               url = URL.createObjectURL(blob);
+                               var meta = url;
+                               var data={ url:''};
+                               data.url=meta;
 
-                            console.log(data);
+                               console.log(data);
+                               appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
 
-                            
-                            appbaseRef.index({
+                                      term: {"button" : "but_7t"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_7t",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
-                            //var m =url;
-                            console.log(url);
-                            
-                            recordRTC.getDataURL(function(dataURL) { 
-                                audio7 = new Howl({
-                                src: [dataURL]
-                            });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
+                                //var m =url;
+                                console.log(url);
                                 
+                                recordRTC.getDataURL(function(dataURL) { 
+                                    audio7 = new Howl({
+                                        src: [dataURL]
+                                    });
+                                    
+                                });
+                                
+                                $("#blob_text").html(blob);
+                                //audio7.muted = false;
+                                but_7t.disabled = false;
                             });
-                            
-                            $("#blob_text").html(blob);
-                            //audio7.muted = false;
-                            but_7t.disabled = false;
-                        });
-                    },1*1000);
-                    return 0;
-                }
+                      },1*1000);
+
+                            return 0;
+                        }
+                    }
                 
-            }
             
             function recording8(){
             var blob;
@@ -37698,19 +37995,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_8y"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_8y",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -37755,19 +38080,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_9u"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_9u",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -37812,19 +38165,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_4g"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_4g",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -37869,19 +38250,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_5h"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_5h",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -37926,19 +38335,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_6j"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_6j",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -37983,19 +38420,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_1v"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_1v",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -38039,19 +38504,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_2b"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_2b",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 
@@ -38095,19 +38588,47 @@ function successCallback(stream){
                             console.log(data);
 
                             
-                            appbaseRef.index({
+                            appbaseRef.search({
+                                  type: "midi",
+                                  body: {
+                                    query: {
+
+                                      term: {"button" : "but_3n"}
+                                  }
+                              }
+                          }).on('data', function(res) {
+                              console.log("query result: ", res);
+                              if(res.hits.hits[0]._source.button == null){
+                                appbaseRef.index({
                                   type: "midi",
                                   body: {
                                     "button": "but_3n",
                                     "myBlob": data
-                                  },
-                                  contentType:"application/json; charset=utf-8",
-                                  dataType: 'json'
-                                }).on('data', function(res) {
-                                  console.log("successfully indexed: ", res);
-                                }).on('error', function(err) {
-                                  console.log("indexing error: ", err);
-                                });
+                                },
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json'
+                            }).on('data', function(res) {
+                              console.log("successfully indexed: ", res);
+                          }).on('error', function(err) {
+                              console.log("indexing error: ", err);
+                          });
+                      }
+                      else{
+                        appbaseRef.update({
+                          type: "midi",
+                          id: res.hits.hits[0]._id,
+                          body: {
+                            doc: {
+                              "myBlob": data
+                          }
+                      }
+                  }).on('data', function(res) {
+                      console.log("successfully updated: ", res);
+                  }).on('error', function(err) {
+                      console.log("update document error: ", err);
+                  });
+              }
+          });
                             
                             console.log(url);
                             recordRTC.getDataURL(function(dataURL) { 

@@ -279,14 +279,44 @@ function successCallback(stream){
                             blob = recordRTC.blob;
                             //console.log(typeof(blob));
                             console.log(blob);
+                            /*var reader = new FileReader();
+                            reader.readAsDataURL(blob);
+                            var file = document.querySelector('#files > input[type="file"]').files[0];*/
+                           // var meta = blob['Blob'];
+                           
                             url = URL.createObjectURL(blob);
+                            var meta = url;
+                            var data={ name:'',url:''};
+                            data.name='img';
+                            data.url=meta;
+
+                            console.log(data);
+
+                            
+                            appbaseRef.index({
+                                  type: "midi",
+                                  body: {
+                                    "button": "but_7t",
+                                    "myBlob": data
+                                  },
+                                  contentType:"application/json; charset=utf-8",
+                                  dataType: 'json'
+                                }).on('data', function(res) {
+                                  console.log("successfully indexed: ", res);
+                                }).on('error', function(err) {
+                                  console.log("indexing error: ", err);
+                                });
+                            //var m =url;
                             console.log(url);
+                            
                             recordRTC.getDataURL(function(dataURL) { 
                                 audio7 = new Howl({
                                 src: [dataURL]
                             });
+                                
                             });
                             
+                            $("#blob_text").html(blob);
                             //audio7.muted = false;
                             but_7t.disabled = false;
                         });
@@ -636,7 +666,9 @@ function successCallback(stream){
                         n
                     </button>
             </div>
+            <pre id="blob_text"></pre>
         </div>
+
         )
     }
 });

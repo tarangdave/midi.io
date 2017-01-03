@@ -1,0 +1,157 @@
+<html>
+
+    <head>
+        <title>MIDI</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="new_added.js"></script>
+		<script src="recordrtc/RecordRTC.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/appbase-js/0.10.8/appbase.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.min.js"></script>
+		<style>
+			.main_block{
+
+				background-color: grey;
+				width: 310px;
+				height: 310px;
+				//margin: auto;
+				margin-top: 10%;
+			}
+			.inner_block{
+				background-color: aquamarine;
+				width: 100px;
+				height: 100px;
+				margin-left: 2px;
+				position: relative;
+				margin-top: 2px;
+				float: left;
+			}
+			.body{
+				background-color: white;
+			}
+			.row{
+				//padding-left: 45%;
+			}
+		</style>
+
+    </head>
+
+    <body class="body">
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Midi IO</a>
+            </div>
+
+
+          </div>
+        </nav>
+
+
+        <div class="row">
+
+				<div class="col-sm-5">
+				</div>
+				<div class="col-sm-4">
+					<ul class="nav navbar-nav">
+					  	<li><button class="btn btn-danger"><span class="glyphicon glyphicon-record"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>&nbsp;&nbsp;</li>
+						<li><button class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+				</div>
+
+
+		</div>
+
+        <div class="row">
+
+				<div class="col-md-3 col-sm-3">
+
+
+					<button class="inner_block" id="gloop_1">
+						gloop1
+					</button>
+					<button class="inner_block" id="gloop_2">
+						gloop2
+					</button>
+					<button class="inner_block" id="gloop_3">
+						gloop3
+					</button>
+					<button class="inner_block" id="gloop_4">
+						gloop4
+					</button>
+					<button class="inner_block" id="gloop_5">
+						gloop5
+					</button>
+					<button class="inner_block" id="gloop_6">
+						gloop6
+					</button>
+
+				</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="main_block">
+					<button class="inner_block" id="but_7">
+						t
+					</button>
+					<button class="inner_block" id="but_8">
+						y
+					</button>
+					<button class="inner_block" id="but_9">
+						u
+					</button>
+					<button class="inner_block" id="but_4">
+						g
+					</button>
+					<button class="inner_block" id="but_5">
+						h
+					</button>
+					<button class="inner_block" id="but_6">
+						j
+					</button>
+					<button class="inner_block" id="but_1">
+						v
+					</button>
+					<button class="inner_block" id="but_2">
+						b
+					</button>
+					<button class="inner_block" id="but_3">
+						n
+					</button>
+
+
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<button class="inner_block" id="loop_1">
+					loop1
+				</button>
+				<button class="inner_block" id="loop_2">
+					loop2
+				</button>
+				<button class="inner_block" id="loop_3">
+					loop3
+				</button>
+				<button class="inner_block" id="loop_4">
+					loop4
+				</button>
+				<button class="inner_block" id="loop_5">
+					loop5
+				</button>
+				<button class="inner_block" id="loop_6">
+					loop6
+				</button>
+			</div>
+
+
+		</div>
+
+    </body>
+</html>

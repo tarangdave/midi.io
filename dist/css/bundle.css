@@ -28,7 +28,44 @@
 			.body{
 				background-color: black;
 			}
-      .nav{ 
+      .nav{
         width: 58%;
         float: right;
       }
+			form {
+  width: 320px;
+  float: left;
+  margin: 20px;
+}
+form > div {
+  position: relative;
+  overflow: hidden;
+}
+form input{
+  width: 100%;
+	color: white;
+  border: 2px solid white;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  outline: 0;
+}
+.go-bottom input {
+  padding: 12px 12px 12px 12px;
+}
+.go-bottom label {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.go-bottom input:focus {
+  padding: 4px 6px 20px 6px;
+}
+.go-bottom input:focus + label {
+  top: 100%;
+  margin-top: -16px;
+}
